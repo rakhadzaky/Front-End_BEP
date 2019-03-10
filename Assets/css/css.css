@@ -1,0 +1,65 @@
+body{
+	font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+	width: 100%;
+	height: 4em;
+	/* padding: 1em 0; */
+	background-color: #eaeaea;
+	background-image: linear-gradient(to top,#f8f8f8, #e6e6e6);
+}
+.header .logo{
+	float: left;
+	width: 10em;
+	height: 100%;
+	padding: 0 1em;
+	background-color: #45a1e8;
+	border-radius: 0 0 20px 0;
+	text-align: center;
+}
+.header .logo img{
+	margin: 5px;
+	height: 80%;
+}
+.header .menu {
+	/* float: left; */
+	padding: 1em 0;
+}
+.header .menu ul li{
+	text-decoration: none;
+	/* float: left; */
+	display: inline;
+	padding: 0 1em;
+	font-weight: bold;
+}
+.header .menu ul .active{
+	color: orangered;
+}
+.header .menu ul li:hover{
+	color: orangered;
+	cursor: pointer;
+}
+.header .user{
+	float: right;
+	font-weight: normal !important;
+}
+.header .user span{
+	margin: 0 1em;
+}
+.header .user img{
+	width: 2em;
+	height: 2em;
+	border-radius: 100%;
+}
+.header .user .online{
+	position: absolute;
+	background-color: #38f438;
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	margin-left: -13px;
+}
+.header .user .name{
+	padding: 0;
+	margin-left: 20px;
+}
