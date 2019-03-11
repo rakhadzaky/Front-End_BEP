@@ -502,6 +502,7 @@ body{
 	background-image: url('../img/background-web.png');
 	background-size: 100%;
 	background-attachment: fixed;
+	font-size: 11pt;
 }
 .header{
 	width: 100%;
@@ -576,6 +577,8 @@ body{
 
 /* body----------------------------------------------------------------------------------------------------- */
 
+/* home---------------------------------------------------------- */
+
 .wrapper{
 	width: 90%;
 	margin: auto;
@@ -618,7 +621,7 @@ body{
 	border: 1px solid #bababa;
 	padding: 1em;
 	width: 30%;
-	margin: 1em;
+	margin: 1.5em auto;
 	border-radius: 15px;
 	background-color: #fafafa;
 	box-shadow: 0em 1em #d8d8d8;
@@ -666,10 +669,104 @@ body{
 	line-height: 1.3em;
 	transition: 0.3s ease;
 }
+.event{
+	margin: 1em 0;
+	width: 95%;
+	height: 100px;
+	margin: auto;
+	border-radius: 20px;
+	background-color: #dfdfdf;
+	box-shadow: 0 1em #d8d8d8;
+}
+
+/* consult------------------------------------------------------------- */
+
+.h1-consult{
+	text-align: center;
+	margin: 1em 0;
+}
+.title{
+	color: navy;
+	font-weight: bold;
+}
+.title-consult{
+	color: cornflowerblue;
+}
+.p-consult{
+	margin: auto auto 4em auto;
+	text-align: center;
+	width: 50%;
+}
+.paket-container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 8em;
+}
+.paket-container .content{
+	text-align: center;
+	margin: auto;
+	width: 30%;
+	padding: 0 3em;
+}
+.paket-container .content .paket-box{
+	background-image: url("../img/background-paket.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 20em;
+	padding: 1em;
+	background-color: #fafafa;
+	border: 1px solid #bababa;
+	border-radius: 20px;
+	margin-bottom: 3em;
+	box-shadow: 0 1em #0064a3;
+}
+.paket-container .content .paket-box .curency{
+	font-size: medium;
+}
+.paket-container .content .paket-box .recomendacy{
+	width: 80%;
+	border-radius: 10px 10px 0 10px;
+	float: right;
+	padding: 2px 0;
+	color: white;
+	background-color: rgb(255, 217, 0);
+	box-shadow: 0 2px rgb(219, 186, 0);
+	margin: 0 -40px 0 0;
+	position: relative;
+}
+.paket-container .content .paket-box .paket-name{
+	border-radius: 10px 10px 0 10px;
+	width: 80%;
+	float: right;
+	padding: 0.5em 0;
+	color: white;
+	font-size: large;
+	font-weight: bold;
+	background-color: #0064a3;
+	margin: 100px -40px 30px 0;
+}
+.paket-container .content .paket-box h3{
+	color: #0064a3;
+	text-align: center;
+	margin-top: 8em;
+}
+.paket-container .content .button{
+	border-radius: 20px;
+	background-color: #0064a3;
+	border: none;
+	color: white;
+	padding: 5px 2em;
+}
+.paket-container .content .button:hover{
+	cursor: pointer;
+	background-color: #005991;
+}
 
 /* footer -------------------------------------------------------------------------------------------- */
 
 .footer{
+	margin: 3em 0 0 0;
 	width: 100%;
 	background-color: #e0e0e0;
 	padding: 3em 10em;
