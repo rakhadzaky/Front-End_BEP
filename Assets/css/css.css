@@ -504,6 +504,9 @@ body{
 	background-attachment: fixed;
 	font-size: 11pt;
 }
+.hidden{
+	display: none;
+}
 .header{
 	width: 100%;
 	height: 4em;
@@ -679,8 +682,133 @@ body{
 	box-shadow: 0 1em #d8d8d8;
 }
 
+/* modal--------------------------------------------------------------- */
+
+.bep-modal-bakcground{
+	background-color: #013b5f;
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+	/* position: absolute; */
+	position: fixed;
+	top: 0;
+	text-align: center;
+}
+.bep-modal{
+	width: 80%;
+	background-color: white;
+	border-radius: 20px;
+	left: 10%;
+	/* position: absolute; */
+	position: fixed;
+	top: 50px;
+}
+.bep-modal .bep-modal-content{
+	padding: 2em;
+}
+.bep-modal .bep-modal-content .bep-modal-header{
+	color: #0064a3;
+}
+.bep-modal .bep-modal-content .bep-modal-header .bep-modal-title{
+	color: #7d7d7d;
+}
+.bep-modal .bep-modal-content .bep-modal-button{
+	color: white;
+	background-color: #0064a3;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 20px;
+	width:100%;
+}
+.bep-modal .bep-modal-content .bep-modal-button:hover{
+	cursor: pointer;
+	background-color: #013b5f;
+}
+
 /* consult------------------------------------------------------------- */
 
+.consult-container{
+	width: 100%;
+	height: 500px;
+	border-radius: 20px;
+	border: 1px solid #bababa;
+	background-color: #fafafa;
+}
+.consult-container .left-section{
+	width: 25%;
+	height: 500px;
+	background-color: #013b5f;
+	left: 0;
+	border-radius: 20px 0 0 20px;
+	color: white;
+	display: inline-block;
+	padding: 5em 1em;
+	position: relative;
+}
+.consult-container .left-section button{
+	width: 90%;
+	padding: 1em;
+	border-radius: 20px;
+	border: none;
+	margin: 5px;
+	background-color: #005991;
+	color: white;
+	left: 0;
+}
+.consult-container .left-section .active{
+	background-color: white;
+	color: black;
+}
+.consult-container .center-section{
+	width: 100%;
+	background-color: #eaeaea;
+	border-radius: 20px;
+	display: inline-block;
+	margin-left: -20px;
+	box-shadow: 2px 0 5px gray;
+	padding: 5em 1em;
+	height: 500px;
+}
+.consult-container .right-section{
+	width: 70%;
+	padding: 2em 2em;
+	display: inline-block;
+	height: 500px;
+	overflow: auto;
+	position: relative;
+}
+.consult-container .right-section .consult-content{
+	width: 100%;
+	color: #7d7d7d;
+}
+.consult-container .right-section .consult-content .content-box{
+	width: 100%;
+	margin: 10px auto;
+	border-radius: 20px;
+	background-color: white;
+	border: 1px solid #bababa;
+	/* padding: 1em; */
+}
+.consult-container .right-section .consult-content .content-box img{
+	width: 50px;
+	border-radius: 100%;
+}
+.consult-container .right-section .consult-content .content-box .title{
+	color: #0064a3;
+}
+.consult-container .right-section .consult-content .content-box button{
+	padding: 5px 1em;
+	width: 100%;
+	color: white;
+	background-color: #0064a3;
+	border: none;
+	border-radius: 20px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.consult-container .right-section .consult-content .content-box button:hover{
+	background-color: #013b5f;
+}
 .h1-consult{
 	text-align: center;
 	margin: 1em 0;
@@ -732,7 +860,7 @@ body{
 	color: white;
 	background-color: rgb(255, 217, 0);
 	box-shadow: 0 2px rgb(219, 186, 0);
-	margin: 0 -40px 0 0;
+	margin: 80px -40px 0 0;
 	position: relative;
 }
 .paket-container .content .paket-box .paket-name{
@@ -744,7 +872,7 @@ body{
 	font-size: large;
 	font-weight: bold;
 	background-color: #0064a3;
-	margin: 100px -40px 30px 0;
+	margin: 20px -40px 30px 0;
 }
 .paket-container .content .paket-box h3{
 	color: #0064a3;
@@ -761,6 +889,125 @@ body{
 .paket-container .content .button:hover{
 	cursor: pointer;
 	background-color: #005991;
+}
+
+/* payment-------------------------------------------------- */
+
+.back-button{
+	margin-top: 2em;
+	color: navy;
+	font-weight: bold;
+	border: none;
+	background-color: transparent;
+}
+.back-button:hover{
+	cursor:pointer;
+}
+.back-button span{
+	font-size: 3em;
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+.flow-container{
+	margin: auto;
+	width: 80%;
+	text-align: center;
+}
+.progressbar {
+	margin-left: 10%;
+}
+.progressbar li {
+	list-style-type: none;
+	width: 25%;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	color: #7d7d7d;
+}
+.progressbar li:before {
+	width: 30px;
+	height: 30px;
+	content: '';
+	counter-increment: step;
+	line-height: 30px;
+	border: 4px solid #7d7d7d;
+	display: block;
+	text-align: center;
+	margin: 0 auto 20px auto;
+	border-radius: 50%;
+	background-color: white;
+}
+.progressbar li:after {
+	width: 100%;
+	height: 5px;
+	content: '';
+	position: absolute;
+	background-color: #7d7d7d;
+	top: 13px;
+	left: -50%;
+	z-index: -1;
+}
+.progressbar li:first-child:after {
+	content: none;
+}
+.progressbar li.active {
+	color: #0064a3;
+}
+.progressbar li.active:before {
+	border-color: #bababa;
+	background-color: #0064a3;
+}
+.progressbar li.active + li:after {
+	background-color: #0064a3;
+}
+.payment-method-box{
+	margin: auto;
+	width: 60%;
+	border-radius: 30px;
+	padding: 4em;
+	border: 1px solid #bababa;
+	margin-top: 100px;
+	text-align: center;
+	background-color: white;
+}
+.payment-method-box .license{
+	border: 1px solid #d8d8d8;
+	background-color: #fafafa;
+	height: 100px;
+	overflow-y: auto;
+	border-radius: 10px;
+	text-align: left;
+	padding: 1em;
+	color: gray;
+}
+.payment-method-box .bank-account{
+	text-align: left;
+	margin: 1em 0;
+	border: 1px solid #bababa;
+	padding: 1.5em;
+	border-radius: 10px;
+	width : 100%;
+}
+.payment-method-box .bank-account-check{
+	background-color: paleturquoise;	
+}
+.payment-method-box .bank-account img{
+	width: 25%;
+	margin: 0 10px;
+}
+.payment-method-box button{
+	margin: 2em auto;
+	padding: 0.5em 2em;
+	border-radius: 20px;
+	background-color: #0064a3;
+	color: white;
+	border: none;
+}
+.payment-method-box button:hover{
+	background-color: #005991;
+	cursor: pointer;
 }
 
 /* footer -------------------------------------------------------------------------------------------- */

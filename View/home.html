@@ -7,7 +7,7 @@
         <div class="materi">
             <div class="box">
                 <div class="img">
-                    <div class="play icon-play-button"></div>
+                    <div id="play1" class="play icon-play-button"></div>
                 </div>
                 <h1>#1</h1>
                 <p>Lorem Isum Lpasde Hasenusa</p>
@@ -53,9 +53,43 @@
         </div>
     </div>
 
+    <div id="modal-background" class="bep-modal-bakcground hidden"></div>
+    <div id="modal" class="bep-modal hidden">
+        <div class="bep-modal-content">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- <video width="100%" controls>
+                        <source src="https://www.youtube.com/watch?v=kTaCNVysDpE" type="video/mp4">
+                        <source src="https://www.youtube.com/watch?v=kTaCNVysDpE" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                    </video> -->
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/kTaCNVysDpE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2 class="bep-modal-header">1# <span class="bep-modal-title">Lorem Ipsum dolor sit amet.</span></h2>
+                </div>
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum illo delectus velit, aperiam numquam quae quam vel sequi architecto dolorum, quibusdam laboriosam dignissimos magni ratione impedit explicabo blanditiis accusamus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente exercitationem esse suscipit distinctio eligendi vero ipsa reiciendis! Error iusto, laudantium maiores saepe nam obcaecati? Debitis iure mollitia ullam eligendi officia.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur repudiandae corrupti incidunt, soluta voluptas officia facere nisi tenetur maxime at sed expedita, hic quaerat cum id deserunt adipisci. Natus, pariatur.</p>
+                    <button class="bep-modal-button"><span class="icon-file-2"></span> Download Materi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#play1").click(function(){
+            $("#modal-background").removeClass("hidden")
+            $("#modal").removeClass("hidden")
+        })
+        $("#modal-background").click(function(){
+            $("#modal-background").addClass("hidden")
+            $("#modal").addClass("hidden")
+        })
+    </script>
+
     <script>
         $("#menu-konsul").click(function(){
-            current_page = "consult.html"
+            current_page = "upgrade.html"
             load_content()
         })
     </script>

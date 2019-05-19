@@ -1,0 +1,107 @@
+<div class="wrapper">
+    <button class="back-button">
+        <span class="fa fa-angle-left"></span> Kembali
+    </button>
+
+    <div class="flow-container">
+        <ul class="progressbar">
+            <li id="list_biodata">Informasi Pembelian</li>
+            <li id="list_payment">Metode Pembayaran</li>
+            <li id="list_konfirmasi">Konfirmasi Pembayaran</li>
+        </ul>
+    </div>
+    <div id="biodata" class="container">
+        <div class="payment-method-box">
+            <div class="row form-group form-inline">
+                <div class="col-md-4">
+                    <label class="float-left">Nama</label>
+                </div>
+                <div class="col-md-8">
+                    <input class="form-control w-100" type="text">
+                </div>
+            </div>
+            <div class="row form-group form-inline">
+                <div class="col-md-4">
+                    <label class="float-left">Tanggal Lahir</label>
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control w-100" type="text">
+                </div>
+                <div class="col-md-4">
+                        <input class="form-control w-100" type="date">
+                </div>
+            </div>
+            <div class="row form-group form-inline">
+                <div class="col-md-4">
+                    <label class="float-left">No. Telp</label>
+                </div>
+                <div class="col-md-8">
+                    <input class="form-control w-100" type="text">
+                </div>
+            </div>
+            <div class="row form-group form-inline">
+                <div class="col-md-4">
+                    <label class="float-left">Alamat</label>
+                </div>
+                <div class="col-md-8">
+                    <textarea class="form-control w-100" name=""></textarea>
+                </div>
+            </div>
+            <div class="row form-group form-inline">
+                <div class="col-md-4">
+                    <label class="float-left">Bidang</label>
+                </div>
+                <div class="col-md-8">
+                    <select name="bidang" class="form-control w-100" id="">
+                        <option value="">Option 1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="license">
+                <p class="text-center font-weight-bold">This Title</p>
+                <ol>
+                    <li class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quam fuga reiciendis. Ex iure deleniti error debitis dignissimos rerum architecto, maxime tempora! Ducimus, rem! Veniam voluptatibus voluptas eum? Impedit, sunt.</li>
+                    <li class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magnam soluta explicabo inventore, cupiditate ab mollitia iusto blanditiis nemo libero alias dolore voluptatibus ex, cumque similique dolorem. Harum, ratione aperiam.</li>
+                </ol>
+            </div>
+            <div class="text-right mt-2">
+                <span>I Agree With Terms and Condition</span> <input type="checkbox" class="ml-2">
+            </div>
+            <button id="btn">Selanjutnya</button>
+        </div>
+    </div>
+
+    <div id="payment" class="container hidden">
+        <div class="payment-method-box">
+            <p>Pilih Metode Transfer</p>
+            <div id="BCA" class="bank-account"><input value="BCA" id="radio" type="radio" name="payment"> <img src="../Assets/img/BCA_logo.svg" alt=""></div>
+            <div id="Mandiri" class="bank-account"><input value="Mandiri" type="radio" name="payment"> <img src="../Assets/img/Bank_Mandiri_logo.svg" alt=""></div>
+            <div id="BNI" class="bank-account"><input value="BNI" type="radio" name="payment"> <img src="../Assets/img/BNI_logo.svg" alt=""></div>
+            <div id="BRI" class="bank-account"><input value="BRI" type="radio" name="payment"> <img src="../Assets/img/BANK_BRI_logo.svg" alt=""></div>
+            <button id="btn">Selanjutnya</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".back-button").click(function(){
+        current_page = "upgrade.html"
+        load_content()
+    })
+    $("#btn").click(function(){
+        $("#payment").removeClass("hidden")
+        $("#biodata").addClass("hidden")
+        $("#list_biodata").addClass("active")
+    })
+    function uncheck() {
+        $("#BCA").removeClass("bank-account-check")
+        $("#Mandiri").removeClass("bank-account-check")
+        $("#BNI").removeClass("bank-account-check")
+        $("#BRI").removeClass("bank-account-check")
+    }
+    $("input[name='payment']").click(function(){
+        uncheck()
+        var id = $("input[name='payment']:checked").val()
+        console.log(id)
+        $("#"+id).addClass("bank-account-check")
+    })
+</script>
