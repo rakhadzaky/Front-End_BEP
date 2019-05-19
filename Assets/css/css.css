@@ -724,6 +724,66 @@ body{
 	cursor: pointer;
 	background-color: #013b5f;
 }
+.bep-modal .bep-modal-content .content-box img{
+	width: 50px;
+	border-radius: 100%;
+}
+.bep-modal .bep-modal-content .content-box .title{
+	color: #0064a3;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment{
+	background-color: #f8f8f8;
+	padding: 10px;
+	border-radius: 5px;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment p{
+	padding: 2em 0;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment .assigment{
+	background-color: #ff7755;
+	color: white;
+	border-radius: 30px;
+	width: 50%;
+	padding: 10px 1em;
+	text-align: right;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment .assigment .content{
+	/* display: inline; */
+	float: left;
+	padding: 10px;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment .assigment button{
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 10px;
+	color: white;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment .assigment button:hover{
+	background-color: white;
+	color: #ff7755;
+	cursor: pointer;
+}
+.bep-modal .bep-modal-content .bep-modal-add-file{
+	background-color: #f8f8f8;
+	margin-top: 2em;
+	padding: 10px 2em;
+	border-radius: 20px;
+	width: 30%;
+	float: left;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment-button{
+	float: right;
+	margin-top: 2em;
+	background-color: #0064a3;
+	border-radius: 20px;
+	padding: 10px 2em;
+	color: white;
+}
+.bep-modal .bep-modal-content .bep-modal-assigment-button:hover{
+	background-color: #013b5f;
+	cursor: pointer;
+}
 
 /* consult------------------------------------------------------------- */
 
