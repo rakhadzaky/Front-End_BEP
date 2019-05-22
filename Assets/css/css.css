@@ -789,14 +789,14 @@ body{
 
 .consult-container{
 	width: 100%;
-	height: 500px;
+	height: 650px;
 	border-radius: 20px;
 	border: 1px solid #bababa;
 	background-color: #fafafa;
 }
 .consult-container .left-section{
 	width: 25%;
-	height: 500px;
+	height: 650px;
 	background-color: #013b5f;
 	left: 0;
 	border-radius: 20px 0 0 20px;
@@ -815,9 +815,16 @@ body{
 	color: white;
 	left: 0;
 }
+.consult-container .left-section button:hover{
+	background-color: #044a75;
+	cursor: pointer;
+}
 .consult-container .left-section .active{
 	background-color: white;
 	color: black;
+}
+.consult-container .left-section .active:hover{
+	background-color: white;
 }
 .consult-container .center-section{
 	width: 100%;
@@ -827,13 +834,18 @@ body{
 	margin-left: -20px;
 	box-shadow: 2px 0 5px gray;
 	padding: 5em 1em;
-	height: 500px;
+	height: 650px;
+	text-align: center;
+}
+.consult-container .center-section img{
+	width: 50%;
+	border-radius: 100%;
 }
 .consult-container .right-section{
 	width: 70%;
 	padding: 2em 2em;
 	display: inline-block;
-	height: 500px;
+	height: 650px;
 	overflow: auto;
 	position: relative;
 }
@@ -868,6 +880,109 @@ body{
 }
 .consult-container .right-section .consult-content .content-box button:hover{
 	background-color: #013b5f;
+}
+.consult-container .right-section .chat-content{
+	width: 100%;
+	height: 520px;
+	overflow: auto;
+}
+.consult-container .right-section .chat-content .date{
+	background-color: #dfdfdf;
+	text-align: center;
+	width: 40%;
+	padding: 5px 10px;
+	border-radius: 20px;
+}
+.consult-container .right-section .chat-content .mentor-chat{
+	width: 100%;
+	margin-bottom: 10px;
+	display: block;
+}
+.consult-container .right-section .chat-content .mentor-chat img{
+	float: left;
+	width: 60px;
+	margin-right: 10px;
+	padding: 10px;
+	border-radius: 100%;
+}
+.consult-container .right-section .chat-content .mentor-chat .chat{
+	float: left;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: white;
+	margin-right: 5px;
+}
+.consult-container .right-section .chat-content .mentor-chat .triangle-left{
+	margin-top: 20px;
+	margin-right: -1px;
+	width: 0px;
+	height: 0px!important;
+	border-top: 10px solid transparent;
+	border-right: 15px solid white;
+	border-bottom: 10px solid transparent;
+	float: left;
+}
+.consult-container .right-section .chat-content .mentor-chat .time{
+	margin-top: 30px;
+	font-size: 8pt;
+	float: left;
+}
+.consult-container .right-section .chat-content .me-chat{
+	width: 100%;
+	margin-bottom: 10px;
+	display: block;
+}
+.consult-container .right-section .chat-content .me-chat img{
+	float: right;
+	width: 60px;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 100%;
+}
+.consult-container .right-section .chat-content .me-chat .chat{
+	float: right;
+	max-width: 60%;
+	color: white;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #0064a3;
+	margin-left: 5px;
+}
+.consult-container .right-section .chat-content .me-chat .triangle-left{
+	margin-top: 20px;
+	margin-left: -1px;
+	width: 0px;
+	height: 0px!important;
+	border-top: 10px solid transparent;
+	border-left: 15px solid #0064a3;
+	border-bottom: 10px solid transparent;
+	float: right;
+}
+.consult-container .right-section .chat-content .me-chat .time{
+	margin-top: 30px;
+	font-size: 8pt;
+	float: right;
+}
+.consult-container .right-section .input-group input{
+	border-radius: 0 20px 20px 0;
+}
+.consult-container .right-section .input-group .input-group-prepend .input-group-text{
+	border-radius: 20px 0 0 20px;
+	font-size: 12pt;
+	text-align: center;
+}
+.consult-container .right-section .input-group .input-group-prepend span button{
+	background-color: transparent;	
+	border: none;
+}
+.consult-container .right-section .input-group button{
+	background-color: #0064a3;
+	border-radius: 20px;
+	color: white;
+	border: none;
+	padding: 1em 2em;
 }
 .h1-consult{
 	text-align: center;
